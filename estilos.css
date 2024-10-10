@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    list-style: none;
+    background-color: #0d0d0d; 
+    padding: 20px;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1b1b1b; 
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #c800ff; 
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menu ul li a {
+    color: #ffffff;
+}
+
+.menu a {
+    color: #ff0ceb;
+}
+
+body {
+    background-image: url('fondo3.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.8); 
+    margin-top: 10px;
+}
+
+aside {
+    background-color: rgba(0, 0, 0, 0.8); 
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8); 
+    margin-top: 10px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+section {
+    border-radius: 10px;
+    flex: 35%;
+}
+
+aside {
+    border-radius: 10px;
+    flex: 30%;
+}
+
+section p {
+    margin: 25px;
+    padding: 5px;
+    background: linear-gradient(45deg, #000000, #1717c7, #a200a2,#ff00ff); 
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; 
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.7), 0 0 20px rgba(255, 0, 255, 0.7); 
+    border-radius: 10px;
+}
+
+aside p {
+    margin: 10px;
+    padding: 5px;
+    background: linear-gradient(45deg,#000000, #1717c7, #a200a2,#ff00ff); 
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.7), 0 0 20px rgba(255, 0, 255, 0.7); 
+    border-radius: 5px;
+}
+
+aside {
+    margin-left: 5px;
+}
+
+footer {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex: 100%;
+
+}
+
+header {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #000000, #1717c7, #a200a2,#ff00ff);
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.8), 0 0 30px rgba(255, 0, 255, 0.8); 
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 15px rgba(255, 0, 255, 0.8); 
+}
+
+footer a{
+
+
+    text-decoration: none;
+    color: white;
+}
+
+section a{
+ 
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20x;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 15px rgba(255, 0, 255, 0.8); 
+}
+
+aside a{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20x;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.8), 0 0 15px rgba(255, 0, 255, 0.8); 
+}
+
+section p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+aside{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+
+.caja2 {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caja2 p{
+    font-size: 25PX;
+
+}
+
+.caja2 section {
+    flex: 1.1;
+    padding: 10px;
+}
+
+.caja2 aside {
+    flex: 1;
+    padding: 10px;
+}
+
+.caja2 img {
+    max-width: 100%; 
+    height: auto;
+}
+
+
+
+.caja3 {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caja3 p{
+    font-size: 25PX;
+
+}
+
+.caja3 section {
+    flex: 1.1;
+    padding: 10px;
+}
+
+.caja3 aside {
+    flex: 1;
+    padding: 10px;
+}
+
+.caja3 img {
+    max-width: 100%; 
+    height: auto;
+}
+
+body {
+    background: linear-gradient(270deg, #000000, #1717c7, #a200a2,#ff00ff);
+    background-size: 600% 600%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.menu {
+    animation: blinkButton 2s infinite;
+}
+
+@keyframes blinkButton {
+    0%, 100% { box-shadow: 0 0 10px #ff00ff; }
+    50% { box-shadow: 0 0 20px #ff00ff; }
+}
+
+section, aside, footer {
+    box-shadow: 0 0 15px rgb(230, 0, 255);
+}
+
+.menu li a:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #c300ff;
+}
+
+img {
+   
+    transition: transform 0.5s ease, box-shadow 0.5s ease; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+
+img:hover {
+    transform: scale(1.1) rotate(5deg); 
+    box-shadow: 0 1px 50px rgba(0, 0, 0, 0.6); 
+    filter: brightness(1.2); 
+}
+
+img:hover {
+    transform: perspective(100px) rotateY(10deg) scale(1.1); 
+}
+
+
+img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
